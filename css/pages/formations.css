@@ -1,0 +1,59 @@
+body {
+  background: radial-gradient(circle at top center, rgb(255, 241, 227) 0%, rgb(255, 241, 227) 25%, rgb(232, 209, 197) 55%);
+}
+
+.page-header img {
+  height: 4rem;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+main h1 {
+  text-align: center;
+}
+main .fading-line {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+}
+main .pawns {
+  position: absolute;
+  right: -20%;
+  scale: 0.45;
+}
+main .butterfly {
+  position: absolute;
+  left: -5%;
+  scale: 0.55;
+}
+
+@media screen and (min-width: 640px) {
+  main .pawns {
+    right: -35%;
+    scale: 0.75;
+  }
+  main .butterfly {
+    left: -25%;
+    scale: 0.75;
+  }
+}
+@media screen and (min-width: 954px) {
+  body {
+    background: radial-gradient(circle at top center, rgb(255, 241, 227) 0%, rgb(255, 241, 227) 25%, rgb(232, 209, 197) 75%);
+  }
+  .page-header img {
+    height: 4.5rem;
+  }
+  main .pawns {
+    scale: 1;
+  }
+  main .butterfly {
+    scale: 1;
+  }
+}/*# sourceMappingURL=formations.css.map */

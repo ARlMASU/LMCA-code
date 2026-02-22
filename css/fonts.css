@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@font-face {
+    font-family: "Parisienne";
+    src:
+        url("../assets/fonts/parisienne-regular-webfont.woff2") format("woff2"),
+        url("../assets/fonts/parisienne-regular-webfont.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
