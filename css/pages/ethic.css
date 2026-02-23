@@ -53,16 +53,15 @@ section.chart .table-of-contents-dropdown {
   border-radius: 2rem;
   margin: 0 1rem;
   max-height: 5rem;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.5s ease;
 }
 section.chart .table-of-contents-dropdown.active {
-  max-height: 1000px;
+  max-height: 850px;
+  transition: max-height 0.5s ease;
 }
 section.chart .table-of-contents-dropdown.active .table-of-contents-dropdown__title img {
   rotate: 180deg;
   height: 100%;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 section.chart .table-of-contents-dropdown__title {
   width: 100%;

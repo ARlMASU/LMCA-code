@@ -1,5 +1,6 @@
 const navWrapper = document.querySelector("#nav-wrapper"),
-    footerWrapper = document.querySelector("#footer-wrapper");
+    footerWrapper = document.querySelector("#footer-wrapper"),
+    toAnimateElements = document.querySelectorAll(".to-animate");
 
 function handleNav() {
     const nav = document.querySelector("#nav"),
@@ -102,31 +103,27 @@ async function implementFooter() {
 implementNav();
 implementFooter();
 
-// const options = {
-//     root: null,
-//     rootMargin: "25%",
-//     scrollMargin: "0px",
-//     threshold: 0,
-// };
+const options = {
+    rootMargin: "-25% 10% -25% 10%",
+    scrollMargin: "10%",
+    threshold: 0.5,
+};
 
-// const callback = (entries) => {
-//     entries.forEach((entry) => {
-//         const element = entry.target;
+const callback = (entries) => {
+    entries.forEach((entry) => {
+        const element = entry.target;
 
-//         if (entry.isIntersecting) {
-//             element.classList.add("move-in-animation");
-//             console.log("added");
-//         } else {
-//             element.classList.remove("move-in-animation");
-//             console.log("removed");
-//         }
-//     });
-// };
+        if (!element.classList.contains("animation")) {
+            if (entry.isIntersecting) {
+                element.classList.add("animation");
+                console.log("added");
+            }
+        }
+    });
+};
 
-// const observer = new IntersectionObserver(callback, options);
+const observer = new IntersectionObserver(callback, options);
 
-// const all = document.querySelectorAll("body > * > * > *");
-
-// all.forEach((element) => {
-//     observer.observe(element);
-// });
+toAnimateElements.forEach((element) => {
+    observer.observe(element);
+});

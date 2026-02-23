@@ -54,19 +54,15 @@ section {
             border-radius: 2rem;
             margin: 0 1rem;
             max-height: 5rem;
-            transition: max-height 0.4s ease;
+            transition: max-height 0.5s ease;
             &.active {
-                max-height: 1000px;
+                max-height: 850px;
+                transition: max-height 0.5s ease;
                 .table-of-contents-dropdown__title {
                     img {
                         rotate: 180deg;
                         height: 100%;
-                        width: fit-content;
                     }
-                }
-                .line-break {
-                }
-                .table-of-contents-dropdown__contents {
                 }
             }
             &__title {

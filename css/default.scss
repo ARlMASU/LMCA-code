@@ -72,6 +72,14 @@ p {
         text-decoration: underline wavy;
         text-decoration-thickness: 1.5px;
         color: var(--on-surface-2);
+        transition: color 0.125s ease;
+        display: inline;
+        &:hover {
+            color: rgb(119, 75, 66);
+        }
+        &:active {
+            color: rgb(105, 66, 59);
+        }
     }
 }
 
@@ -80,6 +88,17 @@ a {
     p {
         font-size: 1.25rem;
         font-weight: 350;
+    }
+}
+
+li {
+    font-family: "Outfit";
+    font-size: 1.25rem;
+    font-weight: 350;
+    line-height: 125%;
+    list-style: inside;
+    strong {
+        font-weight: 450;
     }
 }
 
@@ -158,9 +177,12 @@ img::selection {
 
     p {
         font-size: 1.5rem;
-        line-height: 125%;
     }
     a p {
+        font-size: 1.5rem;
+    }
+
+    li {
         font-size: 1.5rem;
     }
 

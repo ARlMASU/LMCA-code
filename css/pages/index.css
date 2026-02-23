@@ -1,3 +1,31 @@
+@keyframes moveInFromBottom {
+  from {
+    transform: translateY(75%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes moveInFromLeft {
+  from {
+    filter: blur(3px);
+    transform: translateX(-100%) rotate(-15deg);
+  }
+  to {
+    filter: blur(0px);
+    transform: translateX(0%) rotate(0deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    filter: blur(3px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
 body {
   gap: 64px;
 }
@@ -29,14 +57,26 @@ body {
   border: solid 1px rgba(129, 94, 87, 0.5);
   z-index: 200;
 }
+.hero-wrapper .hero.animation .hero__icon,
+.hero-wrapper .hero.animation .hero__text {
+  animation: fadeIn 0.6s ease forwards;
+}
+.hero-wrapper .hero.animation .hero__icon {
+  animation-delay: 0ms;
+}
+.hero-wrapper .hero.animation .hero__text {
+  animation-delay: 400ms;
+}
 .hero-wrapper .hero__icon {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
+  opacity: 0;
 }
 .hero-wrapper .hero__text {
   display: flex;
   flex-flow: column nowrap;
+  opacity: 0;
 }
 .hero-wrapper .hero__text p {
   color: var(--primary);
@@ -56,6 +96,15 @@ body {
   transform: translateY(45%);
   z-index: 0;
 }
+.hero-wrapper .curly-line .svg-elem-1 {
+  stroke-dashoffset: 708px;
+  stroke-dasharray: 708px;
+  transition: stroke-dashoffset 2s ease 0s;
+  transition-delay: 400ms;
+}
+.hero-wrapper .curly-line.animation .svg-elem-1 {
+  stroke-dashoffset: 1416px;
+}
 
 main {
   background: var(--primary);
@@ -74,14 +123,28 @@ main section {
   flex-flow: column nowrap;
   gap: 1.5rem;
 }
+main section.animation p {
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: 100ms;
+}
+main section.animation p:nth-of-type(2) {
+  animation-delay: 200ms;
+}
+main section.animation p:nth-of-type(3) {
+  animation-delay: 300ms;
+}
+main section.animation p:last-of-type {
+  animation-delay: 400ms;
+}
 main section p {
   color: var(--surface-1);
+  opacity: 0;
 }
 main aside {
   display: inline-block;
   position: relative;
   width: 100%;
-  height: 180px;
+  height: 200px;
   display: flex;
   justify-content: center;
 }
@@ -95,10 +158,20 @@ main aside .photo-frame {
 main aside .photo-frame .butterfly {
   opacity: 0.85;
 }
+main aside.animation .photo-frame {
+  animation: moveInFromBottom 0.4s ease forwards;
+}
+main aside.animation .photo-frame:nth-of-type(1) {
+  animation-delay: 50ms;
+}
+main aside.animation .photo-frame:nth-of-type(3) {
+  animation-delay: 100ms;
+}
 main aside .photo-frame:nth-of-type(1) {
   rotate: 16deg;
-  transform: translate(55%, 0);
+  transform: translateY(75%);
   z-index: 50;
+  margin-left: 192px;
 }
 main aside .photo-frame:nth-of-type(1) .butterfly {
   display: inline-block;
@@ -112,15 +185,16 @@ main aside .photo-frame:nth-of-type(1) .butterfly {
 main aside .photo-frame:nth-of-type(2) {
   rotate: 8deg;
   z-index: 25;
-  transform: translate(-10%, 0);
+  transform: translateY(75%);
 }
 main aside .photo-frame:nth-of-type(2) .butterfly {
   display: none;
 }
 main aside .photo-frame:nth-of-type(3) {
   rotate: -12deg;
-  transform: translate(-55%, 0);
+  transform: translateY(75%);
   z-index: 0;
+  margin-right: 192px;
 }
 main aside .photo-frame:nth-of-type(3) .butterfly {
   position: absolute;
@@ -148,6 +222,12 @@ h2 {
   gap: 0.5rem;
 }
 .know-more-section > div > a {
+  opacity: 0;
+}
+.know-more-section > div > a.animation {
+  animation: fadeIn 0.4s ease forwards;
+}
+.know-more-section > div > a {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -159,9 +239,8 @@ h2 {
   transition: scale 0.2s ease, filter 0.2s ease;
 }
 .know-more-section > div > a:hover {
-  scale: 1.05;
+  scale: 1.025;
   z-index: 100;
-  filter: drop-shadow(0 0 12px var(--surface-3));
 }
 .know-more-section > div > a:active {
   scale: 1;
@@ -325,7 +404,7 @@ h2 {
     display: flex;
     flex-flow: row-reverse nowrap;
     padding: 0;
-    gap: 4rem;
+    gap: 6rem;
   }
   main section {
     padding: 4.5rem 4rem 4.5rem 0;
@@ -338,24 +417,36 @@ h2 {
     height: auto;
     flex-flow: column nowrap;
   }
-  main aside .photo-frame {
+  main aside .photo-frame,
+  main aside .photo-frame:nth-of-type(1),
+  main aside .photo-frame:nth-of-type(2),
+  main aside .photo-frame:nth-of-type(3) {
     width: 360px;
     bottom: auto;
     left: -40%;
+    margin: 0 !important;
+    transform: translateX(-100%) translateY(0) rotate(-15deg);
   }
   main aside .butterfly {
     scale: 2;
   }
+  main aside.animation .photo-frame {
+    animation: moveInFromLeft 0.6s ease forwards;
+  }
+  main aside.animation .photo-frame:nth-of-type(1) {
+    animation-delay: 50ms;
+  }
+  main aside.animation .photo-frame:nth-of-type(3) {
+    animation-delay: 100ms;
+  }
   main aside .photo-frame:nth-of-type(1) {
-    transform: translate(0, 40%);
     z-index: 25;
-    top: -30%;
+    top: -10%;
   }
   main aside .photo-frame:nth-of-type(1) .butterfly {
     display: none;
   }
   main aside .photo-frame:nth-of-type(2) {
-    transform: translate(0, 0);
     z-index: 50;
   }
   main aside .photo-frame:nth-of-type(2) .butterfly {
@@ -369,9 +460,8 @@ h2 {
     right: -2.5%;
   }
   main aside .photo-frame:nth-of-type(3) {
-    transform: translate(0, -40%);
     z-index: 25;
-    bottom: -30%;
+    bottom: -10%;
   }
   main aside .photo-frame:nth-of-type(3) .butterfly {
     top: 50%;
