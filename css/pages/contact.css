@@ -8,10 +8,12 @@
 }
 @keyframes modalOut {
   from {
-    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0px);
   }
   to {
-    transform: translateY(100%);
+    opacity: 0;
+    filter: blur(6px);
   }
 }
 @keyframes modalBackdropIn {
@@ -136,6 +138,13 @@ main section.prices .prices__prices-wrapper .price-div button {
   border-radius: 1.25rem;
   background: var(--on-surface-2);
   cursor: pointer;
+  transition: background 0.2s ease;
+}
+main section.prices .prices__prices-wrapper .price-div button:hover {
+  background: rgb(160, 101, 89);
+}
+main section.prices .prices__prices-wrapper .price-div button:active {
+  background: var(--on-surface-2);
 }
 main section.prices .prices__prices-wrapper .price-div button p {
   color: var(--surface-1);
@@ -164,6 +173,13 @@ main section.gift > a {
   border-radius: 1.25rem;
   background: var(--on-surface-2);
   color: var(--surface-1);
+  transition: background 0.2s ease;
+}
+main section.gift > a:hover {
+  background: rgb(160, 101, 89);
+}
+main section.gift > a:active {
+  background: var(--on-surface-2);
 }
 main section.gift > a p {
   width: -moz-fit-content;
@@ -301,8 +317,15 @@ main section.gift > a p {
   align-self: end;
   border: none;
   border-radius: 1.25rem;
-  background: var(--on-surface-2);
   cursor: pointer;
+  background: var(--on-surface-2);
+  transition: background 0.2s ease;
+}
+.modal__content a:hover {
+  background: rgb(160, 101, 89);
+}
+.modal__content a:active {
+  background: var(--on-surface-2);
 }
 .modal__content a p {
   color: var(--surface-1);
@@ -348,5 +371,8 @@ main section.gift > a p {
   .modal__content header .title-wrapper button img {
     aspect-ratio: 1/1;
     height: 100%;
+  }
+  .modal__content a {
+    padding: 1rem 1.5rem 1rem 1rem;
   }
 }/*# sourceMappingURL=contact.css.map */
