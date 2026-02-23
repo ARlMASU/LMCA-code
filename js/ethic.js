@@ -1,19 +1,17 @@
-const tableOfContentsLinks = document.querySelectorAll(
-        ".table-of-contents-dropdown__contents__link",
-    ),
-    chartSections = document.querySelectorAll(".chart-section"),
+const chartSections = document.querySelectorAll(".chart-section"),
+    tableOfContents = document.querySelector(".table-of-contents-dropdown"),
     tableOfContentsTitle = document.querySelector(
         ".table-of-contents-dropdown__title",
     ),
-    tableOfContents = document.querySelector(".table-of-contents-dropdown");
-
+    tableOfContentsLinks = document.querySelectorAll(
+        ".table-of-contents-dropdown__contents__link",
+    );
 tableOfContentsLinks.forEach((link, index) => {
     link.addEventListener("click", () => {
         const selectedSection = document.querySelector(`h3[id='${index + 1}']`);
         selectedSection.scrollIntoView({
             behavior: "smooth",
             block: "center",
-            inline: "nearest",
         });
         chartSections[index].classList.add("highlight-chart-section");
         setTimeout(() => {
