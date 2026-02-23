@@ -68,7 +68,7 @@ function openPriceModal(index, prices) {
                     })
                     .join("")}
             </div>
-            <a href="mailto:laetitiamuratore.com.animale@gmail.com">
+            <a class="button" href="mailto:laetitiamuratore.com.animale@gmail.com">
                 <img src="/assets/svg/buttons/mail.svg" alt="Lettre" />
                 <p>Commander par mail</p>
             </a>
@@ -134,13 +134,13 @@ async function handleData() {
                    160,
                )}...
             </div>
-            <button>
+            <a class="button">
                 <img src="/assets/svg/buttons/arrow_forward.svg" alt="Flèche vers la droite" />
                 <p>En savoir plus</p>
-            </button>
+            </a>
         `;
 
-        const priceDivButton = priceDiv.querySelector("button");
+        const priceDivButton = priceDiv.querySelector("a");
         priceDivButton.addEventListener("click", () =>
             openPriceModal(index, prices),
         );

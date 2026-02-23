@@ -1,1 +1,72 @@
-/*# sourceMappingURL=reviews.css.map */
+body {
+  gap: 3.5rem;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 4rem;
+}
+main section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem;
+}
+main section:nth-child(even) .photo-frame {
+  rotate: -5deg;
+}
+main section .text-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.25rem;
+  width: 100%;
+}
+main section .button {
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: end;
+}
+
+.photo-frame {
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.75rem;
+  rotate: 5deg;
+}
+.photo-frame p {
+  font-family: "Parisienne";
+  font-size: 1.75rem;
+}
+
+.modal__content {
+  padding-bottom: 1.75rem;
+}
+
+@media screen and (min-width: 954px) {
+  main {
+    max-width: 1100px;
+    padding: 0 2rem;
+    gap: 6rem;
+  }
+  main section {
+    gap: 5rem;
+    flex-flow: row-reverse nowrap;
+  }
+  main section:nth-child(even) {
+    flex-flow: row nowrap;
+  }
+  main section .photo-frame {
+    scale: 1.125;
+  }
+  main section .text-wrapper {
+    gap: 1.5rem;
+  }
+  .modal__content {
+    padding-bottom: 3rem;
+  }
+}/*# sourceMappingURL=reviews.css.map */

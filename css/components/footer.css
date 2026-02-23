@@ -56,25 +56,8 @@
   gap: 12px;
 }
 #footer-wrapper .footer__right-section__contact a {
-  display: flex;
-  flex-flow: row nowrap;
-  padding: 12px 16px 12px 12px;
-  color: var(--surface-1);
-  background: var(--on-surface-2);
-  transition: background 0.2s ease;
-  border-radius: 20px;
   width: -moz-fit-content;
   width: fit-content;
-  gap: 8px;
-}
-#footer-wrapper .footer__right-section__contact a img {
-  height: 100%;
-}
-#footer-wrapper .footer__right-section__contact a:hover {
-  background: rgb(160, 101, 89);
-}
-#footer-wrapper .footer__right-section__contact a:active {
-  background: var(--on-surface-2);
 }
 
 @media screen and (min-width: 954px) {
@@ -91,9 +74,6 @@
     flex-flow: row nowrap;
     gap: 24px;
   }
-  #footer-wrapper .footer__right-section__contact a p {
-    font-size: 1.25rem !important;
-  }
 }
 @media screen and (min-width: 1340px) {
   #footer-wrapper .footer {
@@ -102,8 +82,5 @@
   }
   #footer-wrapper .footer__right-section {
     gap: 32px;
-  }
-  #footer-wrapper .footer__right-section__contact a p {
-    font-size: 1.5rem !important;
   }
 }/*# sourceMappingURL=footer.css.map */
