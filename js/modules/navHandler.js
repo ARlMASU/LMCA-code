@@ -32,7 +32,6 @@ export function handleNav(navWrapper) {
     hamburgerMenuCloseButton.addEventListener("click", () => {
         hideHamburgerMenu();
     });
-    console.log(window.location.pathname);
 
     if (
         window.location.pathname === "/index.html" ||

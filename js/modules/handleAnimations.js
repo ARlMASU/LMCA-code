@@ -14,7 +14,6 @@ export function handleAnimations() {
             if (!element.classList.contains("animation")) {
                 if (entry.isIntersecting) {
                     element.classList.add("animation");
-                    console.log("added");
                 }
             }
         });
@@ -30,6 +29,5 @@ export function handleAnimations() {
         Object.defineProperty(options, "rootMargin", {
             value: "-35% 100% -35% 100%",
         });
-        console.log(options.rootMargin);
     }
 }
