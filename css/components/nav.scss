@@ -22,7 +22,7 @@
             width: 100%;
             height: 100%;
             z-index: 0;
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(6px);
             mask: linear-gradient(180deg, black, transparent);
         }
         &.hide {
@@ -44,7 +44,7 @@
                 height: 100%;
                 aspect-ratio: auto;
                 padding: 0.5rem;
-                // filter: drop-shadow(0 0 16px rgba(232, 209, 197, 1));
+                filter: drop-shadow(0 0 16px rgba(232, 209, 197, 1));
             }
         }
         &__hamburger-menu-button {
