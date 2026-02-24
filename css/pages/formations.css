@@ -6,6 +6,38 @@ body {
   height: 4rem;
 }
 
+@keyframes fadeIn {
+  from {
+    filter: blur(3px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0.2;
+    -webkit-mask-size: 100% 0%;
+            mask-size: 100% 0%;
+  }
+  to {
+    opacity: 1;
+    -webkit-mask-size: 100% 100%;
+            mask-size: 100% 100%;
+  }
+}
+@keyframes fadeInFromLeft {
+  from {
+    -webkit-mask-size: 10% 200%;
+            mask-size: 10% 200%;
+  }
+  to {
+    -webkit-mask-size: 175% 200%;
+            mask-size: 175% 200%;
+  }
+}
 main {
   position: relative;
   display: flex;
@@ -16,21 +48,56 @@ main {
 }
 main h1 {
   text-align: center;
+  -webkit-mask-image: linear-gradient(90deg, black, transparent);
+          mask-image: linear-gradient(90deg, black, transparent);
+  padding: 0.25rem;
+  -webkit-mask-size: 0% 100%;
+          mask-size: 0% 100%;
+  -webkit-mask-position: left;
+          mask-position: left;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+main h1.animation {
+  animation: fadeInFromLeft 1s linear forwards;
 }
 main .fading-line {
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 100%;
+  max-width: 90%;
+  margin-top: -0.25rem;
+  -webkit-mask-image: linear-gradient(-235deg, black, transparent);
+          mask-image: linear-gradient(-235deg, black, transparent);
+  -webkit-mask-size: 100% 0%;
+          mask-size: 100% 0%;
+  -webkit-mask-position: top;
+          mask-position: top;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+main .fading-line.animation {
+  animation: fadeInFromTop 1s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 main .pawns {
   position: absolute;
   right: -20%;
   scale: 0.45;
+  opacity: 0;
+}
+main .pawns.animation {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
 }
 main .butterfly {
   position: absolute;
   left: -5%;
   scale: 0.55;
+  opacity: 0;
+}
+main .butterfly.animation {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
 }
 
 @media screen and (min-width: 640px) {

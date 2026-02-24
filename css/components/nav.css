@@ -15,6 +15,19 @@
   height: -moz-fit-content;
   height: fit-content;
   padding: 1.5rem;
+  position: relative;
+}
+#nav-wrapper .nav-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  backdrop-filter: blur(12px);
+  -webkit-mask: linear-gradient(180deg, black, transparent);
+          mask: linear-gradient(180deg, black, transparent);
 }
 #nav-wrapper .nav-header.hide {
   display: none;
@@ -28,6 +41,7 @@
   display: flex;
   flex-flow: row;
   justify-content: start;
+  z-index: 1000;
 }
 #nav-wrapper .nav-header__logo.hide {
   display: none;
@@ -36,7 +50,6 @@
   height: 100%;
   aspect-ratio: auto;
   padding: 0.5rem;
-  filter: drop-shadow(0 0 32px rgb(232, 209, 197));
 }
 #nav-wrapper .nav-header__hamburger-menu-button {
   display: flex;
@@ -62,7 +75,6 @@
   pointer-events: auto;
 }
 #nav-wrapper nav {
-  background: none;
   width: 100%;
   height: 100%;
   opacity: 0;

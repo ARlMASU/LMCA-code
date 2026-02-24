@@ -5,7 +5,9 @@ const chartSections = document.querySelectorAll(".chart-section"),
     ),
     tableOfContentsLinks = document.querySelectorAll(
         ".table-of-contents-dropdown__contents__link",
-    );
+    ),
+    sectionTitles = document.querySelectorAll(".chart-section h3");
+
 tableOfContentsLinks.forEach((link, index) => {
     link.addEventListener("click", () => {
         const selectedSection = document.querySelector(`h3[id='${index + 1}']`);

@@ -1,6 +1,5 @@
 const navWrapper = document.querySelector("#nav-wrapper"),
-    footerWrapper = document.querySelector("#footer-wrapper"),
-    toAnimateElements = document.querySelectorAll(".to-animate");
+    footerWrapper = document.querySelector("#footer-wrapper");
 
 function handleNav() {
     const nav = document.querySelector("#nav"),
@@ -103,10 +102,12 @@ async function implementFooter() {
 implementNav();
 implementFooter();
 
-const options = {
-    rootMargin: "-25% 10% -25% 10%",
-    scrollMargin: "10%",
-    threshold: 0.5,
+toAnimateElements = document.querySelectorAll(".to-animate");
+
+let options = {
+    rootMargin: "-25% 100% -25% 100%",
+    scrollMargin: "0%",
+    threshold: 0.2,
 };
 
 const callback = (entries) => {

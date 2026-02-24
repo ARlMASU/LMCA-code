@@ -1,1 +1,220 @@
-/*# sourceMappingURL=who.css.map */
+@keyframes fadeIn {
+  from {
+    filter: blur(3px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes moveInFromLeft {
+  from {
+    filter: blur(3px) drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
+    transform: translateX(-300%);
+  }
+  to {
+    filter: blur(0px) drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
+    transform: translateX(0%);
+  }
+}
+@keyframes moveInFromRight {
+  from {
+    filter: blur(3px) drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
+    transform: translateX(300%);
+  }
+  to {
+    filter: blur(0px) drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
+    transform: translateX(0%);
+  }
+}
+body {
+  gap: 4rem;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  max-width: 1100px;
+}
+main .blue,
+main .evidence {
+  display: flex;
+  flex-flow: column nowrap;
+}
+main .blue > div,
+main .evidence > div {
+  background: var(--surface-2);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  z-index: 200;
+  position: relative;
+}
+main .blue > div.animation h3,
+main .blue > div.animation p,
+main .evidence > div.animation h3,
+main .evidence > div.animation p {
+  animation: fadeIn 0.6s ease forwards;
+}
+main .blue > div.animation p:nth-of-type(1),
+main .evidence > div.animation p:nth-of-type(1) {
+  animation-delay: 50ms;
+}
+main .blue > div.animation p:nth-of-type(2),
+main .evidence > div.animation p:nth-of-type(2) {
+  animation-delay: 100ms;
+}
+main .blue > div.animation p:nth-of-type(3),
+main .evidence > div.animation p:nth-of-type(3) {
+  animation-delay: 150ms;
+}
+main .blue > div.animation p:nth-of-type(4),
+main .evidence > div.animation p:nth-of-type(4) {
+  animation-delay: 200ms;
+}
+main .blue > div.animation p:nth-of-type(5),
+main .evidence > div.animation p:nth-of-type(5) {
+  animation-delay: 250ms;
+}
+main .blue > div.animation p:nth-of-type(6),
+main .evidence > div.animation p:nth-of-type(6) {
+  animation-delay: 300ms;
+}
+main .blue > div h3,
+main .blue > div p,
+main .evidence > div h3,
+main .evidence > div p {
+  opacity: 0;
+}
+main .blue aside,
+main .evidence aside {
+  position: relative;
+  padding: 4rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+main .blue aside .photo-frame,
+main .evidence aside .photo-frame {
+  z-index: 100;
+  position: relative;
+  rotate: -5deg;
+  filter: blur(3px) drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
+  transform: translateX(-300%);
+}
+main .blue aside .photo-frame.animation,
+main .evidence aside .photo-frame.animation {
+  animation: moveInFromLeft 0.6s cubic-bezier(0.22, 0.18, 0.25, 1) forwards;
+}
+main .blue aside > img,
+main .evidence aside > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85) rotate(-15deg);
+  z-index: 0;
+  -webkit-mask-image: linear-gradient(-180deg, black, transparent);
+          mask-image: linear-gradient(-180deg, black, transparent);
+  -webkit-mask-size: 100% 0%;
+          mask-size: 100% 0%;
+  -webkit-mask-position: top;
+          mask-position: top;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  transition: -webkit-mask-size 4s ease;
+  transition: mask-size 4s ease;
+  transition: mask-size 4s ease, -webkit-mask-size 4s ease;
+}
+main .blue aside > img.animation,
+main .evidence aside > img.animation {
+  -webkit-mask-size: 100% 600%;
+          mask-size: 100% 600%;
+}
+main .blue aside .photo-frame {
+  rotate: 5deg;
+  filter: blur(3px) drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
+  transform: translateX(300%);
+}
+main .blue aside .photo-frame.animation {
+  animation: moveInFromRight 0.6s cubic-bezier(0.22, 0.18, 0.25, 1) forwards;
+}
+main .blue aside > img {
+  transform: translate(-50%, -50%) scale(0.85);
+}
+main .career {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  gap: 1.5rem;
+  color: var(--surface-1);
+  background: var(--primary);
+  border-radius: 1.5rem;
+  z-index: 200;
+  position: relative;
+}
+main .career.animation h2,
+main .career.animation p {
+  animation: fadeIn 0.6s ease forwards;
+}
+main .career.animation p:nth-of-type(1) {
+  animation-delay: 50ms;
+}
+main .career.animation p:nth-of-type(2) {
+  animation-delay: 100ms;
+}
+main .career.animation p:nth-of-type(3) {
+  animation-delay: 150ms;
+}
+main .career.animation p:nth-of-type(4) {
+  animation-delay: 200ms;
+}
+main .career.animation p:nth-of-type(5) {
+  animation-delay: 250ms;
+}
+main .career h2,
+main .career p {
+  opacity: 0;
+  color: var(--surface-1);
+}
+main .career h2 {
+  color: var(--surface-1);
+  text-align: center;
+}
+
+@media screen and (min-width: 954px) {
+  main {
+    gap: 4rem;
+  }
+  main .blue,
+  main .evidence {
+    flex-flow: row-reverse nowrap;
+  }
+  main .blue > div,
+  main .evidence > div {
+    gap: 1rem;
+    max-width: 50%;
+  }
+  main .blue aside,
+  main .evidence aside {
+    width: 50%;
+  }
+  main .blue {
+    flex-flow: row nowrap;
+  }
+  main .blue aside > img {
+    transform: translate(-77%, -27%) scale(1.125) rotate(-20deg);
+  }
+  main .evidence aside > img {
+    transform: translate(-30%, -30%) scale(1.125);
+  }
+  main .career {
+    padding: 4rem;
+    border-radius: 3rem;
+  }
+}/*# sourceMappingURL=who.css.map */

@@ -9,11 +9,11 @@
 
 @keyframes moveInFromLeft {
     from {
-        filter: blur(3px);
+        filter: blur(3px) drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
         transform: translateX(-100%) rotate(-15deg);
     }
     to {
-        filter: blur(0px);
+        filter: blur(0px) drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
         transform: translateX(0%) rotate(0deg);
     }
 }
@@ -31,6 +31,7 @@
 
 body {
     gap: 64px;
+    margin-top: 96px;
 }
 
 .hero-wrapper {
@@ -107,8 +108,8 @@ body {
         .svg-elem-1 {
             stroke-dashoffset: 708px;
             stroke-dasharray: 708px;
-            transition: stroke-dashoffset 2s ease 0s;
-            transition-delay: 400ms;
+            transition: stroke-dashoffset 2s ease;
+            transition-delay: 200ms;
         }
         &.animation .svg-elem-1 {
             stroke-dashoffset: 1416px;
@@ -374,6 +375,9 @@ h2 {
 }
 
 @media screen and (min-width: 954px) {
+    body {
+        margin-top: 128px;
+    }
     .hero-wrapper {
         width: 100%;
 

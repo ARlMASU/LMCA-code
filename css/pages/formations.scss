@@ -13,6 +13,37 @@ body {
     }
 }
 
+@keyframes fadeIn {
+    from {
+        filter: blur(3px);
+        opacity: 0;
+    }
+    to {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0.2;
+        mask-size: 100% 0%;
+    }
+    to {
+        opacity: 1;
+        mask-size: 100% 100%;
+    }
+}
+
+@keyframes fadeInFromLeft {
+    from {
+        mask-size: 10% 200%;
+    }
+    to {
+        mask-size: 175% 200%;
+    }
+}
+
 main {
     position: relative;
     display: flex;
@@ -22,20 +53,47 @@ main {
     margin-top: 4rem;
     h1 {
         text-align: center;
+        mask-image: linear-gradient(90deg, black, transparent);
+        padding: 0.25rem;
+        mask-size: 0% 100%;
+        mask-position: left;
+        mask-repeat: no-repeat;
+        &.animation {
+            animation: fadeInFromLeft 1s linear forwards;
+        }
     }
     .fading-line {
         width: fit-content;
-        max-width: 100%;
+        max-width: 90%;
+        margin-top: -0.25rem;
+        mask-image: linear-gradient(-235deg, black, transparent);
+        mask-size: 100% 0%;
+        mask-position: top;
+        mask-repeat: no-repeat;
+        &.animation {
+            animation: fadeInFromTop 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
     }
     .pawns {
         position: absolute;
         right: -20%;
         scale: 0.45;
+        opacity: 0;
+        &.animation {
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 1s;
+        }
     }
     .butterfly {
         position: absolute;
         left: -5%;
         scale: 0.55;
+        opacity: 0;
+        &.animation {
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 1s;
+        }
     }
 }
 

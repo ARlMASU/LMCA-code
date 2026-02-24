@@ -11,6 +11,7 @@ main {
     section {
         display: flex;
         flex-flow: column nowrap;
+        align-items: center;
         gap: 3rem;
         &:nth-child(even) {
             .photo-frame {
@@ -31,29 +32,13 @@ main {
 }
 
 .photo-frame {
-    display: flex;
-    flex-flow: column nowrap;
     align-self: center;
-    align-items: center;
-    gap: 0.5rem;
-    padding-bottom: 0.75rem;
     rotate: 5deg;
-    p {
-        font-family: "Parisienne";
-        font-size: 1.75rem;
-    }
 }
 
 .modal {
     &__content {
         padding-bottom: 1.75rem;
-        .photo-frame {
-            gap: 0.5rem;
-            padding-bottom: 0.5rem;
-            p {
-                font-size: 1.75rem;
-            }
-        }
     }
 }
 
@@ -69,20 +54,10 @@ main {
                 flex-flow: row nowrap;
             }
             .photo-frame {
-                scale: 1.125;
+                width: 360px;
             }
             .text-wrapper {
                 gap: 1.5rem;
-            }
-        }
-    }
-    .modal {
-        &__content {
-            padding-bottom: 3rem;
-            .photo-frame {
-                p {
-                    font-size: 2.25rem;
-                }
             }
         }
     }
