@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { implementNav } from "./modules/navHandler.js";
 import { implementFooter } from "./modules/footerHandler.js";
 import { handleAnimations } from "./modules/handleAnimations.js";
