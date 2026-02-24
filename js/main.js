@@ -17,14 +17,15 @@ function handleNav() {
         navWrapper.style.pointerEvents = "auto";
         nav.classList.add("show");
         navHeader.classList.add("hide");
-        document.body.style.overflow = "hidden";
+        document.body.style.overflowY = "hidden";
     }
 
     function hideHamburgerMenu() {
         navWrapper.style.pointerEvents = "none";
         nav.classList.remove("show");
         navHeader.classList.remove("hide");
-        document.body.style.overflow = "scroll";
+        document.body.style.overflowY = "scroll";
+        document.body.style.overflowX = "hidden";
     }
 
     hamburgerMenuButton.addEventListener("click", () => {
@@ -105,8 +106,8 @@ implementFooter();
 toAnimateElements = document.querySelectorAll(".to-animate");
 
 let options = {
-    rootMargin: "-25% 100% -25% 100%",
-    scrollMargin: "0%",
+    rootMargin: "0% 100% 0% 100%",
+    scrollMargin: "10%",
     threshold: 0.2,
 };
 
