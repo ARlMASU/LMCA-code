@@ -77,7 +77,8 @@ main {
     }
     .pawns {
         position: absolute;
-        right: -20%;
+        right: -21%;
+        transform: translate(-12%, 10%);
         scale: 0.45;
         opacity: 0;
         &.animation {
@@ -87,8 +88,9 @@ main {
     }
     .butterfly {
         position: absolute;
-        left: -5%;
+        left: -4%;
         scale: 0.55;
+        transform-origin: right center;
         opacity: 0;
         &.animation {
             animation: fadeIn 1s ease forwards;

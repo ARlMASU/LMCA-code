@@ -106,9 +106,9 @@ implementFooter();
 toAnimateElements = document.querySelectorAll(".to-animate");
 
 let options = {
-    rootMargin: "-15% 100% -15% 100%",
+    rootMargin: "-10% 100% -10% 100%",
     scrollMargin: "10%",
-    threshold: 0.2,
+    threshold: 0.30,
 };
 
 const callback = (entries) => {
