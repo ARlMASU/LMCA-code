@@ -106,7 +106,7 @@ implementFooter();
 toAnimateElements = document.querySelectorAll(".to-animate");
 
 let options = {
-    rootMargin: "0% 100% 0% 100%",
+    rootMargin: "-15% 100% -15% 100%",
     scrollMargin: "10%",
     threshold: 0.2,
 };
@@ -129,3 +129,10 @@ const observer = new IntersectionObserver(callback, options);
 toAnimateElements.forEach((element) => {
     observer.observe(element);
 });
+
+if (window.innerWidth < 954) {
+    Object.defineProperty(options, "rootMargin", {
+        value: "-35% 100% -35% 100%",
+    });
+    console.log(options.rootMargin);
+}
