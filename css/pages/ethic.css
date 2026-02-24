@@ -56,7 +56,7 @@ section.chart .table-of-contents-dropdown {
   transition: max-height 0.5s ease;
 }
 section.chart .table-of-contents-dropdown.active {
-  max-height: 850px;
+  max-height: 950px;
   transition: max-height 0.5s ease;
 }
 section.chart .table-of-contents-dropdown.active .table-of-contents-dropdown__title img {
