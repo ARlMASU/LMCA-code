@@ -1,31 +1,9 @@
+import { truncate } from "./modules/truncate.js";
+import { showModal, hideModal } from "./modules/modalHandler.js";
+
 const main = document.querySelector("main"),
     modal = document.querySelector(".modal"),
     modalContent = document.querySelector(".modal__content");
-
-function truncate(str, maxLength) {
-    const truncated = str.substring(0, maxLength);
-    const indexOfLastSpace = truncated.lastIndexOf(" ");
-    return truncated.substring(0, indexOfLastSpace);
-}
-
-function showModal() {
-    modal.classList.remove("closing");
-    document.body.classList.add("modal-open");
-    modal.classList.add("show");
-}
-
-function hideModal() {
-    modal.classList.add("closing");
-
-    modalContent.addEventListener(
-        "animationend",
-        () => {
-            modal.classList.remove("show", "closing");
-            document.body.classList.remove("modal-open");
-        },
-        { once: true },
-    );
-}
 
 function openReviewModal(index, reviews) {
     const selectedReview = reviews[index];
@@ -54,19 +32,21 @@ function openReviewModal(index, reviews) {
             </div>
     `;
 
-    modalContent.querySelector("button").addEventListener("click", hideModal);
+    modalContent
+        .querySelector("button")
+        .addEventListener("click", () => hideModal(modal, modalContent));
 
     modal
         .querySelector(".modal__backdrop")
-        .addEventListener("click", hideModal);
+        .addEventListener("click", () => hideModal(modal, modalContent));
 
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
-            hideModal();
+            hideModal(modal, modalContent);
         }
     });
 
-    showModal();
+    showModal(modal);
 }
 
 async function handleData() {
