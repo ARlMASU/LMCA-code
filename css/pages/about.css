@@ -148,6 +148,9 @@ main:first-of-type section:nth-of-type(3) .images-wrapper .line--mobile path {
   stroke-dashoffset: 752px;
   stroke-dasharray: 752px;
 }
+main:first-of-type section .images-wrapper .line--mobile.animation path {
+  stroke-dashoffset: 0px !important;
+}
 main section {
   display: flex;
   flex-flow: column nowrap;
@@ -274,9 +277,6 @@ main section .images-wrapper .line--mobile {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-main section .images-wrapper .line--mobile.animation path {
-  stroke-dashoffset: 0;
 }
 main section .images-wrapper .line--mobile path {
   transition: stroke-dashoffset 1s ease 0s;

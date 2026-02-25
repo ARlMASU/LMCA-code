@@ -168,6 +168,13 @@ main {
                     stroke-dasharray: 752px;
                 }
             }
+            .images-wrapper .line--mobile {
+                &.animation {
+                    path {
+                        stroke-dashoffset: 0px !important;
+                    }
+                }
+            }
         }
     }
     section {
@@ -308,11 +315,6 @@ main {
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    &.animation {
-                        path {
-                            stroke-dashoffset: 0;
-                        }
-                    }
                     path {
                         transition: stroke-dashoffset 1s ease 0s;
                     }
