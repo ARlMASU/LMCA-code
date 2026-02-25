@@ -32,6 +32,9 @@ main section.animation {
 main section:nth-child(even) .photo-frame {
   rotate: -5deg;
 }
+main section:nth-child(odd) .photo-frame {
+  rotate: 5deg;
+}
 main section .text-wrapper {
   display: flex;
   flex-flow: column nowrap;

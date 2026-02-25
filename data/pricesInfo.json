@@ -6,7 +6,7 @@
             "Cet échange est conseillé afin d'aborder une problématique avec votre animal (émotionnelle, physique, relationnelle ou comportementale) et tenter de la comprendre, mais aussi de lui faire passer un message (déménagement, accouchement, départ en vacances, adoption, maladie, décès, …), d'écouter son ressenti ou encore d'identifier ses peurs et ses besoins.",
             "Des pistes de solutions sont toujours abordées à la fin de chaque communication et un conseil en fleur de Bach est donné si nécessaire."
         ],
-        "img": "/assets/img/contact/communication_simple.webp"
+        "img": "/assets/img/contact/prices_communication_simple.webp"
     },
     {
         "title": "Communication collective (2-3 animaux)",
@@ -15,7 +15,7 @@
             "Cet échange est conseillé dans le cadre d'une problématique commune à plusieurs animaux d'une même famille ou vivants sous le même toit afin de recueillir leur ressenti individuel ou de leur faire passer un message commun (changement de vie, décès, nouvel arrivant, ...).",
             "Des pistes de solutions sont toujours abordées à la fin de chaque communication et un conseil en fleur de Bach est donné si nécessaire."
         ],
-        "img": "/assets/img/contact/communication_collective.webp"
+        "img": "/assets/img/contact/prices_communication_collective.webp"
     },
     {
         "title": "Communication simple + dossier “analyse et solutions”",
@@ -27,7 +27,7 @@
             "A la suite de la séance, vous recevrez un dossier complet sur l'animal, son fonctionnement et ses besoins ainsi que des propositions de solutions afin d'améliorer son quotidien et tenter de régler la/les problématique(s) abordée(s) <strong>en toute autonomie</strong>.",
             "<strong>Avant tout paiement, lors de notre échange pré-communication, nous analyserons la situation ensemble afin de savoir si cette formule peut vous être utile</strong>."
         ],
-        "img": "/assets/img/contact/communication_simple_dossier.webp"
+        "img": "/assets/img/contact/prices_communication_simple_dossier.webp"
     },
     {
         "title": "Communication simple + suivi",
@@ -45,7 +45,7 @@
             "En plus de ces 3 séances de communication, je vous accompagnerai en restant <strong>disponible, par mail, durant 3 mois</strong> afin d'échanger sur l'évolution de la problématique et tenter d'y trouver des solutions concrètes grâce à mes compétences en comportement canin et félin.",
             "Cette formule ne se substitue en rien à une consultation vétérinaire. S'il en ressort une problématique qui sort de mes compétences, il sera de mon devoir de vous renvoyer vers les professionnels attitrés (vétérinaire, nutritionniste, psychologue, vétérinaire-comportementaliste, …)."
         ],
-        "img": "/assets/img/contact/communication_simple_suivi.webp"
+        "img": "/assets/img/contact/prices_communication_simple_suivi.webp"
     },
     {
         "title": "Communication animaux en fin de vie",
@@ -75,7 +75,7 @@
             "C'est là que la CA peut aider à expliquer et traduire toutes ces incompréhensions et ces confusions, aider l'animal à accepter ses émotions et trouver l'équilibre utile afin de passer dans l'acceptation qui mène à la sérénité nécessaire à un départ doux et paisible.",
             "Enfin, elle permet également au gardien de faire passer un <strong>dernier message à l'animal</strong>, de <strong>l'accompagner et le soulager</strong>, mais aussi de s'apaiser afin <strong>d'accepter son départ avec plus de quiétude</strong>."
         ],
-        "img": "/assets/img/contact/communication_fin_de_vie.webp"
+        "img": "/assets/img/contact/prices_communication_fin_de_vie.webp"
     },
     {
         "title": "Communication animaux décédés",
@@ -83,7 +83,7 @@
         "content": [
             "La communication avec les animaux décédés se déroule comme une séance d'échange classique. Elle permet de passer un message à l'animal, de l'interroger sur sa vie en général avant et après son décès, ainsi que de recueillir son ressenti émotionnel."
         ],
-        "img": "/assets/img/contact/communication_animaux_decedes.webp"
+        "img": "/assets/img/contact/prices_communication_animaux_decedes.webp"
     },
     {
         "title": "Communication animaux perdus",
@@ -119,13 +119,13 @@
             "C'est aussi pour toutes ces raisons qu'une formule spéciale « Animaux perdus » est proposée car il est souvent utile de réaliser plusieurs communications dans ce cas particulier. Comme expliqué précédemment, l'animal, s'il n'est pas contraint (retenu de force, coincé ou blessé), peut se déplacer en permanence, et les hypothèses émises peuvent alors évoluer très rapidement. Enfin, cette formule permet de s'informer au fil du temps sur son état physique et émotionnel.",
             "J'insiste une dernière fois sur le fait que ceci ne garantit en rien le retour de votre compagnon mais je vous accompagnerais avec plaisir, douceur et bienveillance si vous le souhaitez."
         ],
-        "img": "/assets/img/contact/communication_animaux_perdus.webp"
+        "img": "/assets/img/contact/prices_communication_animaux_perdus.webp"
     },
     {
         "title": "Abonnement de 3 séances simple (sur 1 an)",
         "detailedTitle": "Abonnement de 3 séances simples à répartir sur une année",
         "characteristics": ["200€"],
         "content": ["Valable un an à partir de la date d'achat."],
-        "img": "/assets/img/contact/abonnement_3_seances.webp"
+        "img": "/assets/img/contact/prices_abonnement_3_seances.webp"
     }
 ]

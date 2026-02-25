@@ -33,6 +33,11 @@ main {
                 rotate: -5deg;
             }
         }
+        &:nth-child(odd) {
+            .photo-frame {
+                rotate: 5deg;
+            }
+        }
         .text-wrapper {
             display: flex;
             flex-flow: column nowrap;
