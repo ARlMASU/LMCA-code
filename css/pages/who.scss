@@ -97,7 +97,11 @@ main {
             align-items: center;
             width: 100%;
             max-width: 100vw;
-            overflow: hidden;
+            overflow: clip;
+            scale: 1.25;
+            > * {
+                scale: 0.875;
+            }
             .photo-frame {
                 z-index: 100;
                 position: relative;
@@ -116,6 +120,7 @@ main {
                 mask-position: top;
                 mask-repeat: no-repeat;
                 transition: mask-size 4s ease;
+
                 &.animation {
                     mask-size: 100% 600%;
                 }
@@ -123,6 +128,8 @@ main {
         }
     }
     .blue aside {
+        mask-image: linear-gradient(-90deg, transparent 0%, black 15%);
+        mask-position: right;
         .photo-frame {
             rotate: 5deg;
             transform: translateX(120%);
@@ -136,6 +143,8 @@ main {
         }
     }
     .evidence aside {
+        mask-image: linear-gradient(90deg, transparent 0%, black 15%);
+        mask-position: left;
         .photo-frame {
             rotate: -5deg;
             transform: translateX(-120%);
@@ -202,18 +211,21 @@ main {
             }
             aside {
                 width: 50%;
-                overflow: visible;
             }
         }
         .blue {
             flex-flow: row nowrap;
-            aside > img {
-                transform: translate(-77%, -27%) scale(1.125) rotate(-20deg);
+            aside {
+                > img {
+                    transform: translate(-77%, -27%) scale(1.125) rotate(-20deg);
+                }
             }
         }
         .evidence {
-            aside > img {
-                transform: translate(-30%, -30%) scale(1.125);
+            aside {
+                > img {
+                    transform: translate(-30%, -30%) scale(1.125);
+                }
             }
         }
         .career {

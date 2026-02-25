@@ -97,13 +97,12 @@ body {
   transform: translateY(45%);
   z-index: 0;
 }
-.hero-wrapper .curly-line .svg-elem-1 {
+.hero-wrapper .curly-line path {
   stroke-dashoffset: 708px;
   stroke-dasharray: 708px;
   transition: stroke-dashoffset 2s ease;
-  transition-delay: 200ms;
 }
-.hero-wrapper .curly-line.animation .svg-elem-1 {
+.hero-wrapper .curly-line.animation path {
   stroke-dashoffset: 1416px;
 }
 
@@ -403,6 +402,9 @@ h2 {
   }
   .hero-wrapper .hero__text p:last-of-type {
     font-size: 2.156rem;
+  }
+  .hero-wrapper .curly-line path {
+    transition-delay: 200ms;
   }
   main {
     display: flex;

@@ -1,5 +1,6 @@
 import { truncate } from "./modules/truncate.js";
 import { showModal, hideModal } from "./modules/modalHandler.js";
+import { handleAnimations } from "./modules/handleAnimations.js";
 
 const main = document.querySelector("main"),
     modal = document.querySelector(".modal"),
@@ -57,7 +58,7 @@ async function handleData() {
 
     reviews.forEach((review, index) => {
         const reviewDiv = document.createElement("section");
-        reviewDiv.classList.add("review-div");
+        reviewDiv.classList.add("review-div", "to-animate");
 
         reviewDiv.innerHTML = `
             <div class="photo-frame">
@@ -89,6 +90,7 @@ async function handleData() {
         );
 
         main.append(reviewDiv);
+        handleAnimations();
     });
 }
 handleData();

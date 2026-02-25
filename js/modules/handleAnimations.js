@@ -2,9 +2,9 @@ export function handleAnimations() {
     let toAnimateElements = document.querySelectorAll(".to-animate");
 
     let options = {
-        rootMargin: "-25% 100% -25% 100%",
+        rootMargin: "-35% 100% -35% 100%",
         scrollMargin: "10%",
-        threshold: 0.3,
+        threshold: 0.25,
     };
 
     const callback = (entries) => {
@@ -26,8 +26,13 @@ export function handleAnimations() {
     });
 
     if (window.innerWidth < 954) {
-        Object.defineProperty(options, "rootMargin", {
-            value: "-35% 100% -35% 100%",
+        Object.defineProperties(options, {
+            rootMargin: {
+                value: "-25% 100% -25% 100%",
+            },
+            threshold: {
+                value: "0.15",
+            },
         });
     }
 }

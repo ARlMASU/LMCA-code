@@ -106,7 +106,12 @@ main .evidence aside {
   align-items: center;
   width: 100%;
   max-width: 100vw;
-  overflow: hidden;
+  overflow: clip;
+  scale: 1.25;
+}
+main .blue aside > *,
+main .evidence aside > * {
+  scale: 0.875;
 }
 main .blue aside .photo-frame,
 main .evidence aside .photo-frame {
@@ -140,6 +145,12 @@ main .evidence aside > img.animation {
   -webkit-mask-size: 100% 600%;
           mask-size: 100% 600%;
 }
+main .blue aside {
+  -webkit-mask-image: linear-gradient(-90deg, transparent 0%, black 15%);
+          mask-image: linear-gradient(-90deg, transparent 0%, black 15%);
+  -webkit-mask-position: right;
+          mask-position: right;
+}
 main .blue aside .photo-frame {
   rotate: 5deg;
   transform: translateX(120%);
@@ -149,6 +160,12 @@ main .blue aside .photo-frame.animation {
 }
 main .blue aside > img {
   transform: translate(-50%, -50%) scale(0.85);
+}
+main .evidence aside {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 15%);
+          mask-image: linear-gradient(90deg, transparent 0%, black 15%);
+  -webkit-mask-position: left;
+          mask-position: left;
 }
 main .evidence aside .photo-frame {
   rotate: -5deg;
@@ -214,7 +231,6 @@ main .career h2 {
   main .blue aside,
   main .evidence aside {
     width: 50%;
-    overflow: visible;
   }
   main .blue {
     flex-flow: row nowrap;

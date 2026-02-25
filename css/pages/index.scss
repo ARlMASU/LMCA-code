@@ -105,13 +105,12 @@ body {
         height: 400px;
         transform: translateY(45%);
         z-index: 0;
-        .svg-elem-1 {
+        path {
             stroke-dashoffset: 708px;
             stroke-dasharray: 708px;
             transition: stroke-dashoffset 2s ease;
-            transition-delay: 200ms;
         }
-        &.animation .svg-elem-1 {
+        &.animation path {
             stroke-dashoffset: 1416px;
         }
     }
@@ -380,7 +379,6 @@ h2 {
     }
     .hero-wrapper {
         width: 100%;
-
         .hero {
             flex-flow: row nowrap;
             padding: 3rem 6rem;
@@ -406,6 +404,9 @@ h2 {
                     font-size: 2.156rem;
                 }
             }
+        }
+        .curly-line path {
+            transition-delay: 200ms;
         }
     }
     main {
