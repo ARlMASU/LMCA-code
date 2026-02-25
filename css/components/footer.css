@@ -8,8 +8,8 @@
   flex-flow: column nowrap;
   width: 100vw;
   background: var(--surface-3);
-  padding: 32px 32px 64px 32px;
-  gap: 32px;
+  padding: 2rem 2rem 4rem 2rem;
+  gap: 2rem;
 }
 #footer-wrapper .footer__logo {
   display: flex;
@@ -26,12 +26,15 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+#footer-wrapper .footer__logo__text p {
+  font-family: "Parisienne", serif;
+}
 #footer-wrapper .footer__logo__text p:first-of-type {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 500;
 }
 #footer-wrapper .footer__logo__text p:last-of-type {
-  font-size: 17.25px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 #footer-wrapper .footer__line {
@@ -42,12 +45,12 @@
 #footer-wrapper .footer__right-section {
   display: flex;
   flex-flow: column nowrap;
-  gap: 48px;
+  gap: 3rem;
 }
 #footer-wrapper .footer__right-section__pages {
   display: flex;
   flex-flow: column nowrap;
-  gap: 8px;
+  gap: 0.5rem;
 }
 #footer-wrapper .footer__right-section__pages a {
   color: var(--primary);
@@ -55,7 +58,7 @@
 #footer-wrapper .footer__right-section__contact {
   display: flex;
   flex-flow: column nowrap;
-  gap: 12px;
+  gap: 0.75rem;
 }
 #footer-wrapper .footer__right-section__contact a {
   width: -moz-fit-content;
@@ -65,8 +68,8 @@
 @media screen and (min-width: 954px) {
   #footer-wrapper .footer {
     flex-flow: row nowrap;
-    padding: 48px 24px;
-    gap: 24px;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
   }
   #footer-wrapper .footer__line {
     width: 2px;
@@ -74,7 +77,7 @@
   }
   #footer-wrapper .footer__right-section {
     flex-flow: row nowrap;
-    gap: 24px;
+    gap: 1.5rem;
   }
 }
 @media screen and (min-width: 1340px) {
