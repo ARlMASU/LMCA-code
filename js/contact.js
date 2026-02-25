@@ -29,6 +29,9 @@ function openPriceModal(index, prices) {
                 </div>
             </header>
             <div class="line-break"></div>
+            <div class="photo-frame">
+                <img src="${selectedPrice.img}" alt="${selectedPrice.title}" />
+            </div>
             <div>
                 ${selectedPrice.content
                     .map((el) => {

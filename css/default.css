@@ -187,6 +187,8 @@ li strong {
 .photo-frame img {
   aspect-ratio: 1/1;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .photo-frame p {
   position: absolute;
@@ -335,6 +337,10 @@ img::selection {
   background: var(--on-surface-1);
   padding: 0.5rem 1.125rem;
   border-radius: 1rem;
+}
+.modal__content .photo-frame {
+  align-self: center;
+  rotate: 5deg;
 }
 .modal__content > div:not(.photo-frame) {
   display: flex;

@@ -184,6 +184,7 @@ li {
     img {
         aspect-ratio: 1 / 1;
         width: 100%;
+        object-fit: cover;
     }
     p {
         position: absolute;
@@ -326,6 +327,10 @@ img::selection {
                     border-radius: 1rem;
                 }
             }
+        }
+        .photo-frame {
+            align-self: center;
+            rotate: 5deg;
         }
         > div:not(.photo-frame) {
             display: flex;

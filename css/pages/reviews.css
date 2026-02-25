@@ -44,11 +44,6 @@ main section .button {
   align-self: end;
 }
 
-.photo-frame {
-  align-self: center;
-  rotate: 5deg;
-}
-
 .modal__content {
   padding-bottom: 1.75rem;
 }
