@@ -6,7 +6,7 @@
             "Merci beaucoup pour la séance de communication animale avec Taiko. Tout ce que tu as partagé était d'une justesse incroyable, et cela m'a profondément touchée.",
             "Je suis vraiment reconnaissante pour ta bienveillance. Merci du fond du cœur."
         ],
-        "img": "/assets/img/reviews/Sarah_Taiko.webp"
+        "img": "/assets/img/reviews/reviews_Sarah_Taiko.webp"
     },
     {
         "names": "Sabine, Lia & Cléa",
@@ -16,7 +16,7 @@
             "La communication réalisée par Laetitia nous a laissé sans voix. Laetitia nous a décrit nos loulouttes telles qu'elles sont dans la vie de tous les jours. Elle a pu répondre à nos questions, nos attentes et cela nous a permis de mieux comprendre leurs comportements et de pouvoir ainsi adopter un autre comportements avec elles pour le bonheur et le bien-être de tous.",
             "Nous remercions de tout cœur Laetitia pour la réalisation de cette communication. N'hésitez pas. Je recommande Laetitia les yeux fermés."
         ],
-        "img": "/assets/img/reviews/Sabine_Lia_Clea.webp"
+        "img": "/assets/img/reviews/reviews_Sabine_Lia_Clea.webp"
     },
     {
         "names": "Muriel & Charlie",
@@ -29,6 +29,68 @@
             "Là aussi, grâce à Laetitia on a pu trouver un terrain d'entente, laisser si possible les cadeaux à l'extérieur. J'en retrouve encore de temps en temps, mais moins souvent.",
             "Trouver un communicant animalier, c'est comme trouver un médiateur entre 2 êtres qui ne parlent pas la même langue. Merci beaucoup pour ton aide."
         ],
-        "img": "/assets/img/reviews/Muriel_Charlie.webp"
+        "img": "/assets/img/reviews/reviews_Muriel_Charlie.webp"
+    },
+    {
+        "names": "Marylin, Cocotte & Chanelle",
+        "animalNames": "Cocotte",
+        "content": [
+            "J'ai fait appel à Laetitia pour Cocotte, l'un de mes trois chats.",
+            "Elle est âgée et pleure souvent. Après avoir fait des examens auprès de mon vétérinaire, elle est en bonne santé. Ce qui est une très bonne nouvelle ! J'ai alors pensé à la communication animale afin de savoir si elle se sentait bien à la maison, si elle avait envie de sortir peut-être, ... bref avoir son ressenti.",
+            "Il s'est avéré qu'elle avait « juste » besoin de tranquillité. Chanelle, le plus jeune de mes chats vient, en effet, régulièrement la titiller. Chanelle est chez moi depuis 4 ans. C'est le chat de ma maman. Elle a mis beaucoup de temps à s'habituer car elle est très peureuse. Depuis une bonne année, elle se sent de plus en plus à l'aise et prend sa place. Et c'est à ce moment que l'équilibre de Cocotte a vacillé. Laetitia a alors fait également une communication avec Chanelle, pour avoir les deux sons de cloche et il s'est avéré que Chanelle a, quant à elle, besoin de beaucoup d'attention et elle aime les moments de caresse et câlins, le fait qu'elle ne puisse pas les avoir tout le temps ou d'être dérangée la frustre, et elle cherche alors les autres."
+        ],
+        "img": "/assets/img/reviews/reviews_Marylin_Cocotte_Chanelle.webp"
+    },
+    {
+        "names": "Tessa & Parker",
+        "animalNames": "Parker",
+        "content": [
+            "Un immense merci à Laetitia pour cette expérience incroyable de communication animale.",
+            "Avec très peu d'informations Laetitia a su se connecter à notre chien, Parker, et son retour a tout simplement été bluffant. Comment a-t-elle pu le décrire si justement sans jamais l'avoir rencontré ? Nous en sommes encore impressionnés !",
+            "Son message nous a profondément rassurés et nous a permis d'en apprendre encore davantage sur notre petit Parker, que nous aimons tellement.",
+            "Son bien-être est notre priorité, et grâce aux conseils et à la guidance de Laetitia, nous savons désormais comment l'accompagner encore mieux pour qu'il soit pleinement heureux.",
+            "Un énorme merci à Laetitia pour son professionnalisme, sa douceur et sa réactivité. Nous recommandons ses services les yeux fermés !"
+        ],
+        "img": "/assets/img/reviews/reviews_Tessa_Parker.webp"
+    },
+    {
+        "names": "Mélissa, Forest & Kito",
+        "animalNames": "Forest & Kito",
+        "content": [
+            "Dans la vie, je suis quelqu'un de très terre à terre et je doutais de la véracité de la communication animale jusqu'à ce que Laetitia me propose un contact avec mon cheval Forest. Depuis, notre relation a totalement changé, elle est devenue solide et elle s'est apaisée. Nous avons appris à nous faire confiance."
+        ],
+        "img": "/assets/img/reviews/reviews_Melissa_Forest_Kito.webp"
+    },
+    {
+        "names": "Emilie & Drago",
+        "animalNames": "Drago",
+        "content": [
+            "Au départ, je ne savais quoi penser de la communication animale mais j'étais réceptive et ouverte. En discutant avec Laetitia, j'ai pris confiance et ensuite, après la première communication et la description de tout, je me suis dit Waaaw! C'était exactement Drago!",
+            "Il n'aboie presque plus (même si ça revient un peu le matin mais plus du tout le soir), il ne va presque plus dans la poubelle (il y est retourné 1x seulement alors que avant c'était 5x par jours) et il ne se sauve plus (ici il a recommencé 2x). On voit dans son comportement qu'il est plus serein et moins stressé même s'il reste foufou.",
+            "Il a compris que sa pièce était la cuisine mais qu'il n'était pas seul.",
+            "Et outre la communication, les conseils de Laetitia sont toujours au top!",
+            "Merci beaucoup."
+        ],
+        "img": "/assets/img/reviews/reviews_Emilie_Drago.webp"
+    },
+    {
+        "names": "Jess & Mumu",
+        "animalNames": "Mumu",
+        "content": [
+            "J'ai eu la chance de participer à une séance de communication animale avec Laetitia pour mon chien Mumu, et j'en ressors très touchée. Laetitia fait preuve d'une immense douceur, d'une grande empathie et surtout d'une écoute sans jugement, ce qui met immédiatement en confiance.",
+            "J'ai beaucoup apprécié la façon dont elle m'a expliqué en détail comment s'était déroulée la communication, ce qui en est ressorti et ce que mon chien avait exprimé. Un élément m'a particulièrement marquée : elle m'a parlé d'un endroit qui lui manquait, où il courait plus jeune avec un objet rouge. Je n'avais absolument pas évoqué cela auparavant, et il s'agit effectivement d'un champ entouré de forêt où j'allais souvent le faire courir, avec son harnais rouge.",
+            "Cette justesse m'a profondément émue. Je remercie Laetitia du fond du cœur pour sa bienveillance et la qualité de son accompagnement. Je suis vraiment très contente de cette expérience »."
+        ],
+        "img": "/assets/img/reviews/reviews_Jess_Mumu.webp"
+    },
+    {
+        "names": "Maude & Pepper",
+        "animalNames": "Pepper",
+        "content": [
+            "Suite au décès de l'un de nos deux chats, nous envisagions d'en adopter un second. Cependant, nous avons rapidement constaté que notre chat restant semblait beaucoup plus épanoui seul, ce qui nous a plongés dans un vrai dilemme. C'est dans ce contexte que nous avons fait appel à Laetitia Muratore pour une communication animale — une première expérience pour nous. Nous avons été agréablement surpris par son approche.",
+            "Laetitia est une personne très douce, empathique et à l'écoute, qui s'exprime avec des termes simples et accessibles à tous. Même si cette expérience reste forcément subjective et sans “preuve” concrète immédiate, elle nous a permis de mieux comprendre le comportement et les besoins de notre chat. Elle a su mettre en lumière des traits de caractère très justes et a conforté ce que nous pressentions déjà : notre chat se sent aujourd'hui mieux ainsi.",
+            "Grâce à cet échange, nous avons pu prendre notre décision avec plus de sérénité. Nous en sommes très satisfaits et la remercions sincèrement."
+        ],
+        "img": "/assets/img/reviews/reviews_Maude_Pepper.webp"
     }
 ]
