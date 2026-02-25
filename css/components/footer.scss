@@ -8,8 +8,8 @@
         width: 100vw;
 
         background: var(--surface-3);
-        padding: 32px 32px 64px 32px;
-        gap: 32px;
+        padding: 2rem 2rem 4rem 2rem;
+        gap: 2rem;
         &__logo {
             display: flex;
             flex-flow: row;
@@ -24,12 +24,15 @@
                 display: flex;
                 flex-flow: column nowrap;
                 width: fit-content;
+                p {
+                    font-family: "Parisienne", serif;
+                }
                 p:first-of-type {
-                    font-size: 24px;
+                    font-size: 2rem;
                     font-weight: 500;
                 }
                 p:last-of-type {
-                    font-size: 17.25px;
+                    font-size: 1.5rem;
                     font-weight: 400;
                 }
             }
@@ -42,11 +45,11 @@
         &__right-section {
             display: flex;
             flex-flow: column nowrap;
-            gap: 48px;
+            gap: 3rem;
             &__pages {
                 display: flex;
                 flex-flow: column nowrap;
-                gap: 8px;
+                gap: 0.5rem;
                 a {
                     color: var(--primary);
                 }
@@ -54,7 +57,7 @@
             &__contact {
                 display: flex;
                 flex-flow: column nowrap;
-                gap: 12px;
+                gap: 0.75rem;
 
                 a {
                     width: fit-content;
@@ -68,15 +71,15 @@
     #footer-wrapper {
         .footer {
             flex-flow: row nowrap;
-            padding: 48px 24px;
-            gap: 24px;
+            padding: 3rem 1.5rem;
+            gap: 1.5rem;
             &__line {
                 width: 2px;
                 height: auto;
             }
             &__right-section {
                 flex-flow: row nowrap;
-                gap: 24px;
+                gap: 1.5rem;
             }
         }
     }
