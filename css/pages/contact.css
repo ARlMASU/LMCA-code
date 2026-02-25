@@ -2,10 +2,6 @@ body {
   gap: 4rem;
   padding: 0;
 }
-body.modal-open {
-  overflow: hidden;
-  height: 100vh;
-}
 
 main {
   display: flex;

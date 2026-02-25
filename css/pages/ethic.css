@@ -12,10 +12,6 @@
     background: none;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   display: flex;
   flex-flow: column nowrap;
@@ -89,7 +85,6 @@ section.chart .table-of-contents-dropdown__contents li {
   list-style-position: inside;
   list-style-type: decimal-leading-zero;
   color: var(--surface-1);
-  font-family: "Outfit";
   font-weight: 400;
   font-size: 1.25rem;
   padding: 0.75rem;
@@ -159,7 +154,7 @@ section.chart ol > li > ul li ul {
   display: flex;
   flex-flow: column nowrap;
   gap: 0.5rem;
-  list-style: square;
+  list-style-type: square;
   padding-left: 2rem;
 }
 section.chart ol > li > ul {

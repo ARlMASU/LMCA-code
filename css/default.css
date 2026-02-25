@@ -64,9 +64,10 @@ body {
   flex-flow: column;
   align-items: center;
   overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 body.modal-open {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, p::-moz-selection, p strong::-moz-selection, a::-moz-selection, li::-moz-selection {
@@ -94,7 +95,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Outfit";
+  font-family: "Outfit", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -103,14 +104,14 @@ h2 {
 }
 
 h3 {
-  font-family: "Outfit";
+  font-family: "Outfit", sans-serif;
   font-size: 1.375rem;
   font-weight: 500;
   color: var(--primary);
 }
 
 p {
-  font-family: "Outfit";
+  font-family: "Outfit", sans-serif;
   font-weight: 350;
   font-size: 1.25rem;
   line-height: 125%;
@@ -166,11 +167,11 @@ a.button p {
 }
 
 li {
-  font-family: "Outfit";
+  font-family: "Outfit", sans-serif;
   font-size: 1.25rem;
   font-weight: 350;
   line-height: 125%;
-  list-style: inside;
+  list-style-position: inside;
 }
 li strong {
   font-weight: 450;
@@ -241,7 +242,6 @@ img::selection {
   align-items: flex-start;
   padding: 16rem 0 4rem 0;
   z-index: 700;
-  inset: 0;
   overflow-y: auto;
   scrollbar-width: none;
 }
