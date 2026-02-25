@@ -326,14 +326,17 @@
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
     #nav-wrapper .desktop-logo {
         display: inline-block;
         position: absolute;
         height: fit-content;
         top: 1.5rem;
         left: 1.5rem;
-        height: 190px;
+        height: 300px;
+        &__icon {
+            height: 100%;
+        }
         &.hide {
             display: none !important;
         }

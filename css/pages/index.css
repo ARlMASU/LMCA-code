@@ -83,10 +83,12 @@ body {
   color: var(--primary);
 }
 .hero-wrapper .hero__text p:first-of-type {
+  font-family: "Parisienne";
   font-size: 2.25rem;
   font-weight: 500;
 }
 .hero-wrapper .hero__text p:last-of-type {
+  font-family: "Parisienne";
   font-size: 1.625rem;
   font-weight: 400;
 }
@@ -398,10 +400,10 @@ h2 {
     text-align: start;
   }
   .hero-wrapper .hero__text p:first-of-type {
-    font-size: 3rem;
+    font-size: 3.25rem;
   }
   .hero-wrapper .hero__text p:last-of-type {
-    font-size: 2.156rem;
+    font-size: 2.4rem;
   }
   .hero-wrapper .curly-line path {
     transition-delay: 200ms;

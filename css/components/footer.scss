@@ -12,15 +12,18 @@
         gap: 32px;
         &__logo {
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row;
             justify-content: center;
             align-items: center;
+            // width: fit-content;
+            // height: 100%;
             &__icon {
                 height: 100%;
             }
             &__text {
                 display: flex;
                 flex-flow: column nowrap;
+                width: fit-content;
                 p:first-of-type {
                     font-size: 24px;
                     font-weight: 500;

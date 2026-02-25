@@ -90,10 +90,12 @@ body {
                 color: var(--primary);
             }
             p:first-of-type {
+                font-family: "Parisienne";
                 font-size: 2.25rem;
                 font-weight: 500;
             }
             p:last-of-type {
+                font-family: "Parisienne";
                 font-size: 1.625rem;
                 font-weight: 400;
             }
@@ -398,10 +400,10 @@ h2 {
                     text-align: start;
                 }
                 p:first-of-type {
-                    font-size: 3rem;
+                    font-size: 3.25rem;
                 }
                 p:last-of-type {
-                    font-size: 2.156rem;
+                    font-size: 2.4rem;
                 }
             }
         }

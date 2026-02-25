@@ -48,7 +48,7 @@ function openPriceModal(index, prices) {
             </div>
             <a class="button" href="mailto:laetitiamuratore.com.animale@gmail.com">
                 <img src="/assets/svg/buttons/mail.svg" alt="Lettre" />
-                <p>Commander par mail</p>
+                <p>Demander par mail</p>
             </a>
     `;
 
@@ -114,8 +114,9 @@ async function handleData() {
                    160,
                )}...
             </div>
+            <img src="${price.img}" alt="${price.title}" />
             <a class="button">
-                <img src="/assets/svg/buttons/arrow_forward.svg" alt="Flèche vers la droite" />
+                <img src="/assets/svg/buttons/arrow_forward.svg" alt="Flèche vers la droite"/>
                 <p>En savoir plus</p>
             </a>
         `;

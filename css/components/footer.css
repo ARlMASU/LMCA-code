@@ -13,7 +13,7 @@
 }
 #footer-wrapper .footer__logo {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
 }
@@ -23,6 +23,8 @@
 #footer-wrapper .footer__logo__text {
   display: flex;
   flex-flow: column nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #footer-wrapper .footer__logo__text p:first-of-type {
   font-size: 24px;
