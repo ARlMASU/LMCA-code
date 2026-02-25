@@ -52,12 +52,14 @@
 }
 
 html {
-    scrollbar-gutter: stable;
+    scrollbar-gutter: stable both-edges;
     scrollbar-color: var(--primary) var(--surface-2);
     scrollbar-width: auto;
+    overflow-x: hidden;
 }
 
 body {
+    width: 100vw;
     background: var(--surface-1);
     margin-top: 192px;
     padding: 0 16px;

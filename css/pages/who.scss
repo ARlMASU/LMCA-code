@@ -98,9 +98,10 @@ main {
             width: 100%;
             max-width: 100vw;
             overflow: clip;
-            scale: 1.25;
-            > * {
-                scale: 0.875;
+            &.animation {
+                > img {
+                    mask-size: 100% 600%;
+                }
             }
             .photo-frame {
                 z-index: 100;
@@ -120,38 +121,41 @@ main {
                 mask-position: top;
                 mask-repeat: no-repeat;
                 transition: mask-size 4s ease;
-
-                &.animation {
-                    mask-size: 100% 600%;
-                }
             }
         }
     }
     .blue aside {
         mask-image: linear-gradient(-90deg, transparent 0%, black 15%);
         mask-position: right;
-        .photo-frame {
-            rotate: 5deg;
-            transform: translateX(120%);
-            &.animation {
+        &.animation {
+            .photo-frame {
                 animation: moveInFromRight 0.6s
                     cubic-bezier(0.22, 0.18, 0.25, 1) forwards;
             }
         }
+        .photo-frame {
+            rotate: 5deg;
+            transform: translateX(120%);
+        }
         > img {
-            transform: translate(-50%, -50%) scale(0.85);
+            transform: translate(-70%, -50%) scale(0.85) rotate(30deg);
         }
     }
     .evidence aside {
         mask-image: linear-gradient(90deg, transparent 0%, black 15%);
         mask-position: left;
-        .photo-frame {
-            rotate: -5deg;
-            transform: translateX(-120%);
-            &.animation {
+        &.animation {
+            .photo-frame {
                 animation: moveInFromLeft 0.6s cubic-bezier(0.22, 0.18, 0.25, 1)
                     forwards;
             }
+        }
+        .photo-frame {
+            rotate: -5deg;
+            transform: translateX(-120%);
+        }
+        > img {
+            transform: translate(-50%, -50%) scale(0.85) rotate(-30deg);
         }
     }
 
@@ -211,20 +215,24 @@ main {
             }
             aside {
                 width: 50%;
+                scale: 1.25;
+                > * {
+                    scale: 0.875;
+                }
             }
         }
         .blue {
             flex-flow: row nowrap;
             aside {
                 > img {
-                    transform: translate(-77%, -27%) scale(1.125) rotate(-20deg);
+                    transform: translate(-75%, -25%) rotate(-20deg) scale(1);
                 }
             }
         }
         .evidence {
             aside {
                 > img {
-                    transform: translate(-30%, -30%) scale(1.125);
+                    transform: translate(-35%, -30%) scale(1);
                 }
             }
         }
