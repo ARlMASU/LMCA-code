@@ -113,7 +113,7 @@
   width: -moz-fit-content;
   width: fit-content;
   height: 100%;
-  pointer-events: auto;
+  pointer-events: none;
   display: flex;
   flex-flow: row;
   justify-content: start;
